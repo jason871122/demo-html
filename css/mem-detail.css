@@ -1,0 +1,145 @@
+html {
+    letter-spacing: 2px;
+    font-family: 微軟正黑體;
+}
+
+body {
+    background-image: url(../img/product-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*側邊scroll 消失*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.mg_top {
+    margin-top: 150px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.table {
+    width: 100%;
+    height: 500px;
+    border-color: #fdc23e;
+    border-width: 8px;
+    border-style: double;
+}
+
+.detail td {
+    background-color: #F0E5DE;
+    width: 50%;
+    padding-top: 35px;
+    border-color: #fff;
+    border-width: 3px;
+}
+
+.good_detail {
+    border-color: #fdc23e;
+    border-width: 8px;
+    border-style: double;
+    background-color: #F0E5DE;
+}
+
+.good_detail td {
+    padding: 10px;
+}
+
+input[type=text] {
+    width: 300px;
+}
+
+input[type=password] {
+    width: 300px;
+}
+
+.block {
+    overflow: scroll;
+    height: 400px;
+}
+
+.block::-webkit-scrollbar {
+    display: none;
+}
+
+.btn-outline-warning {
+    border-width: 3px;
+    font-weight: bold;
+    color: #D09E88;
+    border-color: #D09E88;
+    transition: 0.5s;
+}
+
+.btn-outline-warning:hover {
+    background-color: #F0E5DE;
+    border-color: #b84a39;
+    color: #b84a39;
+    transition: 0.3s;
+}
+
+.pad-top {
+    padding-top: 50px;
+}
+
+.pad {
+    padding: 20px 50px 40px 0px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    letter-spacing: 2px;
+    transition: top 0.3s ease-in-out;
+}
+
+header.header-up {
+    top: -120px;
+}
+
+@font-face {
+    font-family: teko;
+    src: url(../font/teko-medium.otf);
+    font-family: Ocho_Siete;
+    src: url(../font/Ocho_Siete.ttf);
+}
+
+.nav-margin {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.btn img {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.s-btn {
+    width: 80%;
+    border-radius: 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.type {
+    background-color: #fff;
+    padding: 0;
+    width: 100%;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0;
+}

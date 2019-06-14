@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+body {
+    background-image: url(../img/product-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.slide-container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    padding-left: 20%;
+    margin-top: 110px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+.pad {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+}
+
+.card {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #fc913a;
+    background-image: url(../img/product-bg.png);
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px 0px 0px 20px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgb(255, 238, 228, 0.5);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    margin-top: 20px;
+    float: left;
+    width: 16.66%;
+    padding-left: 10px;
+}
+
+.slider-container {
+    margin-top: 50px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.demo-bg {
+    background-color: #e77e4d;
+    margin: 65px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.pad_top {
+    margin-top: 40px;
+}
+
+.bg {
+    background-color: #fff;
+}
+
+.pad_top h2 {
+    margin-top: 20px;
+}
+
+.good_price {
+    color: #BA0000;
+}
+
+.big_box {
+    background-color: #F6B352;
+    margin-top: 130px;
+}
+
+.box_border {
+    font-family: 微軟正黑體;
+    border-style: double;
+    border-width: 6px;
+    border-color: #feee7d;
+    border-radius: 8px;
+}
+
+.message_border {
+    border-top-style: dotted;
+    border-color: #D5D4D5;
+    padding: 10px;
+}
+
+/*星星*/
+/*---------- star rating ----------*/
+.starWrapper {
+    padding: 5px;
+}
+
+.starWrapper img {
+    cursor: pointer;
+    zoom: 1.5;
+}
+
+.btn-color {
+    margin-bottom: 30px;
+    background-color: #e77e4d;
+    border-radius: 8px;
+    color: #111111;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.btn-color:hover {
+    background-color: #6f2108;
+    border-radius: 20px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn-con {
+    margin-top: 30px;
+    background-color: #e77e4d;
+    border-radius: 8px;
+    color: #111111;
+    transition: 0.5s;
+    width: 100px;
+}
+
+.btn-con:hover {
+    background-color: #6f2108;
+    border-radius: 20px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    letter-spacing: 2px;
+    transition: top 0.3s ease-in-out;
+}
+
+header.header-up {
+    top: -120px;
+}
+
+@font-face {
+    font-family: teko;
+    src: url(../font/teko-medium.otf);
+    font-family: Ocho_Siete;
+    src: url(../font/Ocho_Siete.ttf);
+}
+
+.nav-margin {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.btn img {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.s-btn {
+    width: 80%;
+    border-radius: 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.type {
+    background-color: #fff;
+    padding: 0;
+    width: 100%;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0;
+}
+
+footer {
+    margin-top: 10px;
+    padding-top: 50px;
+    margin-bottom: 0;
+    background-color: #C46A5D;
+    height: 250px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1500px) {
+    footer {
+        height: 320px;
+    }
+}
+
+footer p {
+    letter-spacing: 2px;
+    padding-right: 30px;
+    font-weight: bold;
+    color: #F0E5DE;
+}

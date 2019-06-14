@@ -1,0 +1,201 @@
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 100px;
+    font-family: 微軟正黑體;
+    background-image: url(../img/shopping-cart-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+/*側邊scroll 消失*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+/*進度條*/
+.progress {
+    border-radius: 8px;
+    height: 25px;
+}
+
+.bg-color {
+    background-color: #ee6e9f;
+}
+
+/*進度條進度*/
+.progress-bar {
+    border-radius: 8px;
+}
+
+/*進度條上方文字*/
+.detail-p {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+/*標題*/
+.title {
+    width: 98%;
+    border-bottom: 5px solid #C46A5D;
+    overflow: hidden;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+/*標題字底色*/
+.curr {
+    background-color: #C46A5D;
+}
+
+/*標題字*/
+.title h4 {
+    margin: 0;
+    letter-spacing: 2px;
+    padding: 5px 15px 3px 15px;
+    float: left;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    cursor: pointer;
+    min-width: 100px;
+    position: relative;
+}
+
+/*內容底色*/
+.detail-bg {
+    background-color: #D09E88;
+    border-color: #C46A5D;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+/*運送方式radio*/
+.detail-bg input[type=radio] {
+    width: 20px;
+    zoom: 150%;
+}
+
+/*運送方式區塊*/
+.block {
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+/*上下步按鈕*/
+.botton-btn .btn {
+    margin-bottom: 5%;
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+/*訂購人資訊text*/
+.block input[type=text] {
+    border-radius: 5px;
+    border-color: #C46A5D;
+    border-style: solid;
+}
+
+.block input[type=email] {
+    border-radius: 5px;
+    border-color: #C46A5D;
+    border-style: solid;
+}
+
+.block select {
+    border-radius: 5px;
+    border-color: #C46A5D;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.b2 {
+    background-color: #C46A5D;
+}
+
+.b3 {
+    background-color: #C46A5D;
+}
+
+input[type="email"]:invalid {
+    color: red;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    letter-spacing: 2px;
+    transition: top 0.3s ease-in-out;
+}
+
+header.header-up {
+    top: -120px;
+}
+
+@font-face {
+    font-family: teko;
+    src: url(../font/teko-medium.otf);
+    font-family: Ocho_Siete;
+    src: url(../font/Ocho_Siete.ttf);
+}
+
+.nav-margin {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.btn img {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.s-btn {
+    width: 80%;
+    border-radius: 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.type {
+    background-color: #fff;
+    padding: 0;
+    width: 100%;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0;
+}
+
+/*title
+#C46A5D*/
+
+/*body
+#D09E88*/

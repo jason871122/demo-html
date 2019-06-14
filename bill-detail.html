@@ -1,0 +1,305 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bill</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/bread.png" />
+</head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/mem-detail.css">
+
+<body>
+    <!-- 標籤頁 -->
+    <header class="header-down">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><span style="font-family: Ocho_Siete; font-size: 40px; font-weight: bold; letter-spacing: 3px; padding-left: 20px;">Le pain</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item nav-margin active">
+                        <a class="nav-link" href="index.html">&Hfr;ome <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <div class="dropdown">
+                            <a class="nav-link  dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="shop.html">商品專區</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="所有商品" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="中式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="歐式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="日式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="手做蛋糕" class="type">
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <a class="nav-link" href="about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <a class="nav-link" href="member.html">會員專區</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav mr-auto" style="margin-left: 20px">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">登入</a>
+                        </li>
+                        <span style="padding: 8px">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">註冊</a>
+                        </li>
+                    </ul>
+                    <div style="padding-top: 5px">
+                        <form class="bs-example bs-example-form" role="form" method="post" action="">
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" width="20%" name="search">
+                                    <span class="input-group-btn">
+                                        <input type="image" class="btn s-btn btn-default" src="img/search.png" onclick="submit()">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <!--header end-->
+    <div class="container">
+        <div class="row mg_top ">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active ">
+                            <a href="member.html">會員資料</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="change-psw.html">更改密碼</a>
+                        </li>
+                        <li class="breadcrumb-item ">訂單資訊</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="good_detail txt-center">
+            <div class="row">
+                <div class="col-6">
+                    <table>
+                        <tr>
+                            <td>
+                                訂單編號 :
+                            </td>
+                            <td>
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                收件人 :
+                            </td>
+                            <td>
+                                韓國愚
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                收件人電話 :
+                            </td>
+                            <td>
+                                0978787878
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                收件人地址 :
+                            </td>
+                            <td>
+                                桃園市中壢區實踐路91巷7號
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 bill_detail">
+                    <hr style="width: 95%">
+                    <button class="btn btn-outline-secondary" style="margin: 16px;" type="button">查看訂單明細</button>
+                    <div class="hide block" style="display: none;">
+                        <div class="row ">
+                            <div class="col">
+                                <img class="w-100" src="img/j1-1.jpg" alt="">
+                            </div>
+                            <div class="col pad-top">商品名稱 : 伯爵奶茶</div>
+                            <div class="col pad-top">商品價格 : 45元</div>
+                            <div class="col pad-top">商品數量 : 3個</div>
+                            <div class="col pad-top">小計 : 135</div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <img class="w-100" src="img/j1-1.jpg" alt="">
+                            </div>
+                            <div class="col pad-top">商品名稱 : 伯爵奶茶</div>
+                            <div class="col pad-top">商品價格 : 45元</div>
+                            <div class="col pad-top">商品數量 : 3個</div>
+                            <div class="col pad-top">小計 : 135</div>
+                        </div>
+                        <hr style="width: 95%">
+                        <div class="txt-right pad">總計 : 1123</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="good_detail txt-center">
+            <div class="row">
+                <div class="col-6">
+                    <table>
+                        <tr>
+                            <td>
+                                訂單編號 :
+                            </td>
+                            <td>
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                收件人 :
+                            </td>
+                            <td>
+                                韓國愚
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                收件人電話 :
+                            </td>
+                            <td>
+                                0978787878
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                收件人地址 :
+                            </td>
+                            <td>
+                                桃園市中壢區實踐路91巷7號
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 bill_detail">
+                    <hr style="width: 95%">
+                    <button class="btn btn-outline-secondary" style="margin: 16px;" type="button">查看訂單明細</button>
+                    <div class="hide block" style="display: none;">
+                        <div class="row ">
+                            <div class="col">
+                                <img class="w-100" src="img/j1-1.jpg" alt="">
+                            </div>
+                            <div class="col pad-top">商品名稱 : 伯爵奶茶</div>
+                            <div class="col pad-top">商品價格 : 45元</div>
+                            <div class="col pad-top">商品數量 : 3個</div>
+                            <div class="col pad-top">小計 : 135</div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <img class="w-100" src="img/j1-1.jpg" alt="">
+                            </div>
+                            <div class="col pad-top">商品名稱 : 伯爵奶茶</div>
+                            <div class="col pad-top">商品價格 : 45元</div>
+                            <div class="col pad-top">商品數量 : 3個</div>
+                            <div class="col pad-top">小計 : 135</div>
+                        </div>
+                        <hr style="width: 95%">
+                        <div class="txt-right pad">總計 : 1123</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function(event) {
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 100);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight) {
+            // Scroll Down
+            $('header').removeClass('header-down').addClass('header-up');
+        } else {
+            // Scroll Up
+            if (st + $(window).height() > $(document).height()) {
+                $('header').removeClass('header-up').addClass('header-down');
+            }
+        }
+
+        lastScrollTop = st;
+    }
+    </script>
+    <script>
+    window.onload = function() {
+        $(".bill_detail").each(function() {
+            var row = $(this);
+            row.children('button').click(function() {
+                row.children(".hide").slideToggle(600);
+            })
+
+        })
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>

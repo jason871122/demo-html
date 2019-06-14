@@ -1,0 +1,380 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/bread.png" />
+</head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/product.css">
+
+<body>
+    <!-- 標籤頁 -->
+    <header class="header-down">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><span style="font-family: Ocho_Siete; font-size: 40px; font-weight: bold; letter-spacing: 3px; padding-left: 20px;">Le pain</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item nav-margin active">
+                        <a class="nav-link" href="index.html">&Hfr;ome <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <div class="dropdown">
+                            <a class="nav-link  dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="shop.html">商品專區</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="所有商品" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="中式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="歐式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="日式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="手做蛋糕" class="type">
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <a class="nav-link" href="about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <a class="nav-link" href="member.html">會員專區</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav mr-auto" style="margin-left: 20px">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">登入</a>
+                        </li>
+                        <span style="padding: 8px">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">註冊</a>
+                        </li>
+                    </ul>
+                    <div style="padding-top: 5px">
+                        <form class="bs-example bs-example-form" role="form" method="post" action="">
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" width="20%" name="search">
+                                    <span class="input-group-btn">
+                                        <input type="image" class="btn s-btn btn-default" src="img/search.png" onclick="submit()">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <!-- 商品資訊 -->
+    <div class="container">
+        <div class="row big_box box_border">
+            <div class="col-5 ">
+                <div class="slider-container">
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                        <img src="img/t3-2.jpg" style="width:80%">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/t3-1.jpg" style="width:80%">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/t3-3.jpg" style="width:80%">
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <!-- Image text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <!-- Thumbnail images -->
+                    <div class="row demo-bg">
+                        <div class="col">
+                            <img class="demo cursor" src="img/t3-2.jpg" style="width:89%" onclick="currentSlide(1)">
+                        </div>
+                        <div class="col">
+                            <img class="demo cursor" src="img/t3-1.jpg" style="width:89%" onclick="currentSlide(2)">
+                        </div>
+                        <div class="col">
+                            <img class="demo cursor" src="img/t3-3.jpg" style="width:89%" onclick="currentSlide(3)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 ">
+                <div class="good_title pad_top">
+                    <span>
+                        <h3>海苔肉鬆</h3>
+                    </span>
+                </div>
+                <div class="good_detail pad_top">
+                    <span>
+                        <h4>
+                            <p>產品特色 : <br>海苔尬肉鬆，迸出新滋味，搭配著麵包的甜味，讓人讚不絕口</p>
+                            <p>成分 : <br>麵團(高筋麵粉、雞蛋、糖、油、鹽、天然酵母)、海苔、肉鬆</p>
+                            <p>最佳賞味期 : 2 天</p>
+                            <p>庫存 : 10 個</p>
+                        </h4>
+                    </span>
+                </div>
+                <div class="good_price pad_top">
+                    <span>
+                        <h1>$30</h1>
+                    </span>
+                </div>
+                <div class="row pad_top">
+                    <div class="col-6">
+                        <form action="" method="get" accept-charset="utf-8">
+                            <input type="submit" class="btn btn-color" name="" value="加入購物車">
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <form action="" method="get" accept-charset="utf-8">
+                            <input type="submit" class="btn btn-color" name="" value="立即購買">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 商品評價 -->
+    <div class="container">
+        <div class="row bg box_border pad_top">
+            <div class="col-12">
+                <span>
+                    <h2>商品評價</h2>
+                </span>
+                <form action="" method="post" id="usrform">
+                    <p class="starWrapper" onmouseover="rate(this,event)">
+                        <img src="http://www.jb51.net/upload/20080508122008586.gif" title="很爛">
+                        <img src="http://www.jb51.net/upload/20080508122008586.gif" title="一般">
+                        <img src="http://www.jb51.net/upload/20080508122008586.gif" title="還好">
+                        <img src="http://www.jb51.net/upload/20080508122008586.gif" title="較好">
+                        <img src="http://www.jb51.net/upload/20080508122008586.gif" title="很好">
+                    </p>
+                    <div>意見反饋 : </div>
+                    <div><textarea rows="4" cols="50" name="comment" form="usrform" required></textarea></div>
+                    <input type="submit" class="btn btn-con" name="" value="送出">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 留言板 -->
+    <div class="container">
+        <div class="row bg box_border pad_top">
+            <div class="col-12">
+                <span>
+                    <h2>評價區</h2>
+                </span>
+            </div>
+            <div class="col-12 message_border">
+                <h4>5487@gmail.com</h4>
+                <span>
+                    <p>留言在此</p>
+                </span>
+                <p>2019/1/7</p>
+            </div>
+        </div>
+    </div>
+    <!-- 興趣商品 -->
+    <div class="container">
+        <div class="row bg box_border pad_top">
+            <div class="col-12">
+                <span>
+                    <h2>你可能感興趣...</h2>
+                </span>
+                <div class="row txt-center">
+                    <div class="col-4">
+                        <div class="card pad" style="width: 80%; margin-left: 35px;">
+                            <form method="post" action="">
+                                <img src="img/t3-2.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">芋頭麵包</h5>
+                                    <p>售價：40元</p>
+                                    <input type="submit" value=前往購買 class="btn btn-color btn-lg">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card pad" style="width: 80%; margin-left: 35px;">
+                            <form method="post" action="">
+                                <img src="img/t3-2.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">芋頭麵包</h5>
+                                    <p>售價：40元</p>
+                                    <input type="submit" value=前往購買 class="btn btn-color btn-lg">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card pad" style="width: 80%; margin-left: 35px;">
+                            <form method="post" action="">
+                                <img src="img/t3-2.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">芋頭麵包</h5>
+                                    <p>售價：40元</p>
+                                    <input type="submit" value=前往購買 class="btn btn-color btn-lg">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row txt-left">
+                <div class="col-8">
+                    <p>營業時間 : 8 : 00 － 20 : 00</p>
+                    <p>訂購專線 : +886-900-520-141</p>
+                    <p>地址 : 桃園市中壢區大仁一街25號3樓之1</p>
+                    <p>Copyright &copy; Le pain版權所有　請尊重智慧財產權</p>
+                    <p>目前網站瀏覽人數 : 1024</p>
+                </div>
+                <div class="col-4 txt-right">
+                    <a href="https://www.instagram.com/xiang_zhen1122/?hl=zh-tw"><img src="https://img.icons8.com/cotton/64/000000/instagram.png"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100006324120508&ref=bookmarks"><img src="img/fb.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+    // star
+    function rate(obj, oEvent) {
+        //================== 
+        // 圖片地址設置 
+        //================== 
+        var imgSrc = 'http://www.jb51.net/upload/20080508122008586.gif'; //沒有填色的星星
+        var imgSrc_2 = 'http://www.jb51.net/upload/20080508122010810.gif'; //打分後有顏色的星星
+        //--------------------------------------------------------------------------- 
+        if (obj.rateFlag) return;
+        var e = oEvent || window.event;
+        var target = e.target || e.srcElement;
+        var imgArray = obj.getElementsByTagName("img");
+        for (var i = 0; i < imgArray.length; i++) {
+            imgArray[i]._num = i;
+            imgArray[i].onclick = function() {
+                if (obj.rateFlag) return;
+                obj.rateFlag = true;
+                alert(this._num + 1); //this._num+1這個數字寫入到數據庫中,作為評分的依據
+            };
+        }
+        if (target.tagName == "IMG") {
+            for (var j = 0; j < imgArray.length; j++) {
+                if (j <= target._num) {
+                    imgArray[j].src = imgSrc_2;
+                } else {
+                    imgArray[j].src = imgSrc;
+                }
+            }
+        } else {
+            for (var k = 0; k < imgArray.length; k++) {
+                imgArray[k].src = imgSrc;
+            }
+        }
+    }
+    </script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function(event) {
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 100);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight) {
+            // Scroll Down
+            $('header').removeClass('header-down').addClass('header-up');
+        } else {
+            // Scroll Up
+            if (st + $(window).height() > $(document).height()) {
+                $('header').removeClass('header-up').addClass('header-down');
+            }
+        }
+
+        lastScrollTop = st;
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 100px;
+    font-family: 微軟正黑體;
+    background-image: url(../img/shopping-cart-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+/*側邊scroll 消失*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+/*進度條*/
+.progress {
+    border-radius: 8px;
+    height: 25px;
+}
+
+.bg-color {
+    background-color: #ee6e9f;
+}
+
+/*進度條進度*/
+.progress-bar {
+    border-radius: 8px;
+}
+
+/*進度條上方文字*/
+.detail-p {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+/*會員*/
+.member {
+    left: 0;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+/*會員小頭像*/
+.member img {
+    width: 4%;
+    padding-bottom: 4px;
+}
+
+/*會員名字*/
+#name {
+    color: #0080ff;
+    font-weight: bold;
+}
+
+/*checkbox*/
+.check {
+    zoom: 2;
+}
+
+/*購物籃title*/
+.title-detail {
+    background-color: #C46A5D;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: -16.2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*商品圖片*/
+.product-img {
+    width: 200%;
+}
+
+/*購物車基底*/
+.cart-bg {
+    background-color: #D09E88;
+}
+
+/*購物籃商品*/
+.cart {
+    padding-top: 20px;
+}
+
+/*購物車底部*/
+.cart-bottom {
+    background-color: #C46A5D;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 20px;
+    margin-bottom: 3%;
+}
+
+/*全部清除按鈕*/
+.btn-color {
+    margin-left: 10px;
+    color: #000000;
+    background-color: #fbd14b;
+    border-color: #fbd14b;
+    letter-spacing: 5px;
+    width: 80%;
+    transition: 1.5s;
+    font-weight: bold;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+
+.btn-color:hover {
+    color: #005f6b;
+    background-color: #fff1b9;
+    border-color: #fff1b9;
+    letter-spacing: 10px;
+    width: 150%;
+    transition: 1.0s;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*數量、金額*/
+.last {
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+/*總金額*/
+.number {
+    color: #fbd14b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*結帳與選購按鈕*/
+.botton-btn .btn {
+    margin-bottom: 5%;
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+.num {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    letter-spacing: 2px;
+    transition: top 0.3s ease-in-out;
+}
+
+header.header-up {
+    top: -120px;
+}
+
+@font-face {
+    font-family: teko;
+    src: url(../font/teko-medium.otf);
+    font-family: Ocho_Siete;
+    src: url(../font/Ocho_Siete.ttf);
+}
+
+.nav-margin {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.btn img {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.s-btn {
+    width: 80%;
+    border-radius: 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.type {
+    background-color: #fff;
+    padding: 0;
+    width: 100%;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0;
+}

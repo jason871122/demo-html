@@ -1,0 +1,189 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Member</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/bread.png" />
+</head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/mem-detail.css">
+
+<body>
+    <!-- 標籤頁 -->
+    <header class="header-down">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><span style="font-family: Ocho_Siete; font-size: 40px; font-weight: bold; letter-spacing: 3px; padding-left: 20px;">Le pain</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item nav-margin active">
+                        <a class="nav-link" href="index.html">&Hfr;ome <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <div class="dropdown">
+                            <a class="nav-link  dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="shop.html">商品專區</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="所有商品" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="中式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="歐式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="日式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="手做蛋糕" class="type">
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <a class="nav-link" href="about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <a class="nav-link" href="member.html">會員專區</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav mr-auto" style="margin-left: 20px">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">登入</a>
+                        </li>
+                        <span style="padding: 8px">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">註冊</a>
+                        </li>
+                    </ul>
+                    <div style="padding-top: 5px">
+                        <form class="bs-example bs-example-form" role="form" method="post" action="">
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" width="20%" name="search">
+                                    <span class="input-group-btn">
+                                        <input type="image" class="btn s-btn btn-default" src="img/search.png" onclick="submit()">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <!--header end-->
+    <div class="container">
+        <div class="row mg_top ">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active ">會員資料</li>
+                        <li class="breadcrumb-item">
+                            <a href="change-psw.html">更改密碼</a>
+                        </li>
+                        <li class="breadcrumb-item ">
+                            <a href="bill-detail.html">訂單資訊</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center detail">
+                <form action="" method="post">
+                    <table class="table">
+                        <tr>
+                            <td>帳號(Email)</td>
+                            <td>
+                                5487@gmail.com
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>姓名</td>
+                            <td><input type="text" name="name" required value="韓國瑜"></td>
+                        </tr>
+                        <tr>
+                            <td>手機號碼</td>
+                            <td>
+                                <input type="text" name="phone" required value="0987878787">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>預設收貨地址</td>
+                            <td>
+                                <input type="text" name="address" required value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt-center" colspan="2">
+                                <input class="btn btn-outline-warning" type="submit" name="" value="儲存">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function(event) {
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 100);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight) {
+            // Scroll Down
+            $('header').removeClass('header-down').addClass('header-up');
+        } else {
+            // Scroll Up
+            if (st + $(window).height() > $(document).height()) {
+                $('header').removeClass('header-up').addClass('header-down');
+            }
+        }
+
+        lastScrollTop = st;
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>

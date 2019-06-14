@@ -1,0 +1,435 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 微軟正黑體;
+}
+
+body {
+    background-image: url(../img/index-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*側邊scroll 消失*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+/*熱門商品底色*/
+.card {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 1.0);
+    border-radius: 8px;
+    border-color: #fdc23e;
+    border-width: 3px;
+    height: 550px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .media-992 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #sug_bg {
+        display: none;
+    }
+}
+
+/*熱門商品標題*/
+#sug_bg h2 {
+    padding-top: 150px;
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: teko;
+    color: #fff;
+}
+
+/*hr圖片*/
+.hr {
+    margin-bottom: 20px;
+}
+
+/*熱門商品圖片*/
+.card img {
+    padding-top: 30px;
+    width: 70%;
+}
+
+/*熱門商品title*/
+.card-body h4 {
+    font-weight: bold;
+    padding-left: 30%;
+    letter-spacing: 2px;
+}
+
+.card-body div {
+    padding-left: 25%;
+}
+
+.card-body p {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.card-footer {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background-color: #fff;
+}
+
+.card-pop {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.card-pop .btn {
+    width:
+}
+
+/*熱們商品圖片框大小*/
+.pop_block {
+    margin: 20px;
+    height: 150px;
+    padding-left: 25%;
+}
+
+
+/*熱門商品按鈕*/
+.btn-color {
+    color: #fff;
+    letter-spacing: 2px;
+    background-color: rgb(120, 22, 0, 0.7);
+    transition: 0.8s;
+}
+
+.card-text {
+    height: 100px;
+    overflow: scroll;
+
+}
+
+.card-text::-webkit-scrollbar {
+    display: none;
+}
+
+/*熱門商品按鈕觸發*/
+.btn:hover {
+    color: rgb(120, 22, 0);
+    background-color: #F7AA97;
+    transition: 0.4s;
+}
+
+/*gotop圖片*/
+#gotop img {
+    width: 20%;
+    opacity: 0.6;
+}
+
+/*gotop圖片*/
+#gotop img:hover {
+    width: 20%;
+    opacity: 1.0;
+}
+
+/*gotop*/
+#gotop {
+    display: none;
+    position: fixed;
+    right: -23%;
+    bottom: 0px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/*推薦商品背景*/
+#sug_bg {
+    height: 730px;
+    background-image: url(../img/bread-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*推薦商品列*/
+#sug1 {
+    display: show;
+}
+
+.p-border {
+    border-color: #fdc23e;
+    border-style: double;
+    border-width: 5px;
+}
+
+.p-name {
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/*推薦商品列*/
+#sug2 {
+    display: none;
+}
+
+/*推薦商品列*/
+#sug3 {
+    display: none;
+}
+
+/*推薦商品圖*/
+#sug1 img {
+    width: 80%;
+    margin-top: 30%
+}
+
+#sug2 img {
+    width: 80%;
+    margin-top: 30%
+}
+
+/*推薦商品向左切換*/
+#pre {
+    font-family: arial;
+    font-size: 50px;
+    color: #011627;
+    position: relative;
+    top: 60%;
+}
+
+/*推薦商品向左切換指標切換*/
+#pre:hover {
+    cursor: pointer;
+}
+
+/*推薦商品向右切換指標切換*/
+#nex:hover {
+    cursor: pointer;
+}
+
+/*推薦商品向右切換*/
+#nex {
+    font-family: arial;
+    font-size: 50px;
+    color: #011627;
+    position: relative;
+    top: 60%;
+    left: 70%;
+}
+
+/*字體*/
+@font-face {
+    font-family: teko;
+    src: url(../font/teko-medium.otf);
+    font-family: Ocho_Siete;
+    src: url(../font/Ocho_Siete.ttf);
+}
+
+/*輪播下方特效*/
+.mov_content {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background: red;
+    animation: mymove 3.5s;
+    -webkit-animation: mymove 3.5s;
+    /*Safari and Chrome*/
+    z-index: 2;
+    top: 0%;
+}
+
+@keyframes mymove {
+    from {
+        left: -1000px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes mymove
+
+/*Safari and Chrome*/
+    {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 200px;
+    }
+}
+
+/*左移動畫*/
+.mov_left {
+    position: absolute;
+    background-image: url('../img/bg1.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 100px;
+    animation: movleft 3s;
+    -webkit-animation: movleft 3s;
+    /*Safari and Chrome*/
+    z-index: 2;
+    top: 0%;
+}
+
+@keyframes movleft {
+    from {
+        left: -1000px;
+        opacity: 0;
+    }
+
+    to {
+        left: 100px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes movleft {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 1000px;
+    }
+}
+
+/*右移動畫*/
+.mov_right {
+    position: absolute;
+    background-image: url('../img/bg3.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    right: -450px;
+    animation: movright 3.5s;
+    -webkit-animation: movright 3.5s;
+    z-index: 3;
+    top: 0%;
+}
+
+@keyframes movright {
+    from {
+        right: -1000px;
+        opacity: 0
+    }
+
+    to {
+        right: -450px;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes movright {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: 1000px;
+    }
+}
+
+.ani-img {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#ani_btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    letter-spacing: 2px;
+    transition: top 0.3s ease-in-out;
+}
+
+header.header-up {
+    top: -120px;
+}
+
+@font-face {
+    font-family: teko;
+    src: url(font/teko-medium.otf);
+    font-family: Ocho_Siete;
+    src: url(font/Ocho_Siete.ttf);
+}
+
+.nav-margin {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.btn img {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.s-btn {
+    width: 80%;
+    border-radius: 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.type {
+    background-color: #fff;
+    padding: 0;
+    width: 100%;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0;
+}
+
+footer {
+    margin-top: 10px;
+    padding-top: 50px;
+    margin-bottom: 0;
+    background-color: #C46A5D;
+    height: 250px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1500px) {
+    footer {
+        height: 320px;
+    }
+}
+
+footer p {
+    letter-spacing: 2px;
+    padding-right: 30px;
+    font-weight: bold;
+    color: #F0E5DE;
+}

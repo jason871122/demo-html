@@ -1,0 +1,393 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>about</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/bread.png" />
+</head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<style>
+    footer {
+    margin-top: 10px;
+    padding-top: 50px;
+    margin-bottom: 0;
+    background-color: #C46A5D;
+    height: 250px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1500px) {
+    footer {
+        height: 320px;
+    }
+}
+
+footer p{
+    letter-spacing: 2px;
+    padding-right: 30px;
+    font-weight: bold;
+    color: #F0E5DE;
+}
+    header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    letter-spacing: 2px;
+    transition: top 0.3s ease-in-out;
+}
+
+header.header-up {
+    top: -120px;
+}
+
+@font-face {
+    font-family: teko;
+    src: url(font/teko-medium.otf);
+    font-family: Ocho_Siete;
+    src: url(font/Ocho_Siete.ttf);
+}
+
+.nav-margin{
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.btn img{
+    width: 70%;
+    padding-right: 20px;
+}
+
+.s-btn{
+    width: 80%;
+    border-radius: 0;
+}
+
+.navbar{
+    padding: 0;
+}
+
+.type{
+    background-color: #fff;
+    padding: 0;
+    width: 100%;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0;
+}
+body {
+    background-image: url(img/product-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.mem-img{
+    border-style: double;
+    border-color: #FDD692;
+    border-width: 8px;
+    border-radius: 20px;
+}
+
+.gid figure {
+    position: relative;
+}
+
+.gid figcaption {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+.h_style1 figcaption {
+    opacity: 0;
+    text-align: left;
+    backface-visibility: hidden;
+    transition: transform 0.3s, opacity 0.3s;
+    border-radius: 20px;
+    background-color: #EC7357;
+    width: 440px;
+    height: 340px;
+}
+
+.h_style1 figure:hover figcaption {
+    opacity: 0.9;
+    transform: translate(0px, 0px);
+}
+
+.big_block1 {
+    border-radius: 20px;
+    padding-top:
+}
+
+.ul_club {
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    padding-left: 50px;
+    letter-spacing: 2px;
+}
+
+.name{
+    font-size: 26px;
+    color: white;
+    padding-top: 60px;
+    line-height: 30px;
+    padding-left: 48px;
+    letter-spacing: 2px;
+}
+
+figcaption a{
+    padding-left: 20px;
+}
+</style>
+
+<body>
+    <!-- 標籤頁 -->
+    <header class="header-down">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><span style="font-family: Ocho_Siete; font-size: 40px; font-weight: bold; letter-spacing: 3px; padding-left: 20px;">Le pain</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item nav-margin active">
+                        <a class="nav-link" href="index.html">&Hfr;ome <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <div class="dropdown">
+                            <a class="nav-link  dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="shop.html">商品專區</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="所有商品" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="中式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="歐式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="日式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="手做蛋糕" class="type">
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <a class="nav-link" href="about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <a class="nav-link" href="member.html">會員專區</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav mr-auto" style="margin-left: 20px">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">登入</a>
+                        </li>
+                        <span style="padding: 8px">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">註冊</a>
+                        </li>
+                    </ul>
+                    <div style="padding-top: 5px">
+                        <form class="bs-example bs-example-form" role="form" method="post" action="">
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" width="20%" name="search">
+                                    <span class="input-group-btn">
+                                        <input type="image" class="btn s-btn btn-default" src="img/search.png" onclick="submit()">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <div style="padding-top: 150px; margin-bottom: 50px">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <div class="gid h_style1">
+                        <div class="big_block1">
+                            <figure>
+                                <img class="mem-img" src="img/mem3.jpg" alt="" width="100%">
+                                <figcaption>
+                                    <p class="name">陳可意</p>
+                                    <ul class="ul_club">
+                                        <li>後端設計</li>
+                                        <li>美化版面</li>
+                                        <li>文書處裡</li>
+                                    </ul>
+                                    <a href="https://www.instagram.com/chenky1110/?hl=zh-tw">
+                                        <img src="https://img.icons8.com/cotton/64/000000/instagram.png">
+                                    </a>
+                                    <a href="https://www.facebook.com/profile.php?id=100006154298420">
+                                        <img src="img/fb.png">
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="gid h_style1">
+                        <div class="big_block1">
+                            <figure>
+                                <img class="mem-img" src="img/mem3.jpg" alt="" width="100%">
+                                <figcaption>
+                                    <p class="name">陳俐尹</p>
+                                    <ul class="ul_club">
+                                        <li>後端設計</li>
+                                        <li>美化版面</li>
+                                        <li>文書處裡</li>
+                                    </ul>
+                                    <a href="https://www.instagram.com/chanliyin___/?hl=zh-tw">
+                                        <img src="https://img.icons8.com/cotton/64/000000/instagram.png">
+                                    </a>
+                                    <a href="https://www.facebook.com/chanliyinn">
+                                        <img src="img/fb.png">
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <div class="gid h_style1">
+                        <div class="big_block1">
+                            <figure>
+                                <img class="mem-img" src="img/mem3.jpg" alt="" width="100%">
+                                <figcaption>
+                                    <p class="name">陳祥禎</p>
+                                    <ul class="ul_club">
+                                        <li>前端設計</li>
+                                        <li>美化版面</li>
+                                        <li>文書處裡</li>
+                                    </ul>
+                                    <a href="https://www.instagram.com/xiang_zhen1122/?hl=zh-tw">
+                                        <img src="https://img.icons8.com/cotton/64/000000/instagram.png">
+                                    </a>
+                                    <a href="https://www.facebook.com/profile.php?id=100006324120508&ref=bookmarks">
+                                        <img src="img/fb.png">
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="gid h_style1">
+                        <div class="big_block1">
+                            <figure>
+                                <img class="mem-img" src="img/mem3.jpg" alt="" width="100%">
+                                <figcaption>
+                                    <p class="name">林靖豐</p>
+                                    <ul class="ul_club">
+                                        <li>前端設計</li>
+                                        <li>JS功能設計</li>
+                                        <li>文書處裡</li>
+                                    </ul>
+                                    <a href="https://www.instagram.com/jing_feng520141/?hl=zh-tw">
+                                        <img src="https://img.icons8.com/cotton/64/000000/instagram.png">
+                                    </a>
+                                    <a href="https://www.facebook.com/profile.php?id=100002382553168">
+                                        <img src="img/fb.png">
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row txt-left">
+                <div class="col-8">
+                    <p>營業時間 : 8 : 00 － 20 : 00</p>
+                    <p>訂購專線 : +886-900-520-141</p>
+                    <p>地址 : 桃園市中壢區大仁一街25號3樓之1</p>
+                    <p>Copyright &copy; Le pain版權所有　請尊重智慧財產權</p>
+                    <p>目前網站瀏覽人數 : 1024</p>
+                </div>
+                <div class="col-4 txt-right">
+                    <a href="https://www.instagram.com/xiang_zhen1122/?hl=zh-tw"><img src="https://img.icons8.com/cotton/64/000000/instagram.png"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100006324120508&ref=bookmarks"><img src="img/fb.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function(event) {
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 100);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight) {
+            // Scroll Down
+            $('header').removeClass('header-down').addClass('header-up');
+        } else {
+            // Scroll Up
+            if (st + $(window).height() > $(document).height()) {
+                $('header').removeClass('header-up').addClass('header-down');
+            }
+        }
+
+        lastScrollTop = st;
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

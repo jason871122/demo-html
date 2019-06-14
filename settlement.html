@@ -1,0 +1,289 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Settlement</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/bread.png" />
+</head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/settlement.css">
+
+<body>
+    <!-- 標籤頁 -->
+    <header class="header-down">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><span style="font-family: Ocho_Siete; font-size: 40px; font-weight: bold; letter-spacing: 3px; padding-left: 20px;">Le pain</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item nav-margin active">
+                        <a class="nav-link" href="index.html">&Hfr;ome <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <div class="dropdown">
+                            <a class="nav-link  dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="shop.html">商品專區</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="所有商品" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="中式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="歐式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="日式麵包" class="type">
+                                    </a>
+                                </form>
+                                <form action="shop.html">
+                                    <a class="dropdown-item">
+                                        <input type="submit" value="手做蛋糕" class="type">
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <a class="nav-link" href="about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item nav-margin">
+                        <a class="nav-link" href="member.html">會員專區</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav mr-auto" style="margin-left: 20px">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">登入</a>
+                        </li>
+                        <span style="padding: 8px">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">註冊</a>
+                        </li>
+                    </ul>
+                    <div style="padding-top: 5px">
+                        <form class="bs-example bs-example-form" role="form" method="post" action="">
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" width="20%" name="search">
+                                    <span class="input-group-btn">
+                                        <input type="image" class="btn s-btn btn-default" src="img/search.png" onclick="submit()">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <!-- 進度條 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm txt-center detail-p">
+                購買明細
+            </div>
+            <div class="col-sm txt-center detail-p">
+                付款方式
+            </div>
+            <div class="col-sm txt-center detail-p">
+                最後確認
+            </div>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-color progress-bar-animated" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%">
+        </div>
+    </div>
+    <form action="" method="post">
+        <!-- 運送方式 -->
+        <div class="title">
+            <h4 class="curr txt-center">運送方式</h4>
+        </div>
+        <div class="detail-bg">
+            <div class="block b2"><input id="home-delivery" type="radio" name="transfer" value="home-delivery" checked="true"> 宅配到府 (生鮮食品，全成使用低溫配送)</div>
+        </div>
+        <!-- 付款方式 -->
+        <div class="title">
+            <h4 class="curr txt-center">付款方式</h4>
+        </div>
+        <div class="detail-bg">
+            <div class="block b3"><input id="con-store-pay" type="radio" name="pay" value="convenience-store" checked="true"> 超商取貨付現</div>
+        </div>
+        <!-- 訂購人資訊 -->
+        <div class="title">
+            <h4 class="curr txt-center">訂購人資訊</h4>
+        </div>
+        <div class="detail-bg">
+            <div class="container">
+                <div class="block">
+                    <div class="row">
+                        <div class="col-2">姓名</div>
+                        <div class="col-9"><input type="text" name="buyername" required="required"></div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="row">
+                        <div class="col-2">手機</div>
+                        <div class="col-9"><input type="text" name="buyerphone" required="required"> 手機市話可擇一填寫</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="row">
+                        <div class="col-2">市話</div>
+                        <div class="col-9"><input type="text" name="buyertel" required="required"> 手機市話可擇一填寫</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="row">
+                        <div class="col-2">E-mail</div>
+                        <div class="col-9"><input type="email" name="buyeremail" required="required"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 收件人資訊 -->
+        <div class="title">
+            <h4 class="curr txt-center">收件人資訊</h4>
+        </div>
+        <!-- 宅配到府 -->
+        <div id="to-home">
+            <div class="detail-bg">
+                <div class="container">
+                    <div class="block">
+                        <div class="row">
+                            <div class="col-2">收件人</div>
+                            <div class="col-9"><input type="text" name="buyer" required="required"> 姓名請填寫中文</div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="row">
+                            <div class="col-2">聯絡電話</div>
+                            <div class="col-9"><input type="text" name="tel" required="required"> 宅配人員將以此區資料聯繫</div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="row">
+                            <div class="col-2">E-mail</div>
+                            <div class="col-9"><input type="email" name="email" required="required"> 交易通知將會發送到此 Email</div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="row">
+                            <div class="col-2">收件地址</div>
+                            <div class="col-9">
+                                <select name="area">
+                                    <option value="none">請選擇縣市</option>
+                                    <option value="jilong">基隆</option>
+                                    <option value="taipei">台北</option>
+                                    <option value="xinbei">新北</option>
+                                    <option value="taoyuan">桃園</option>
+                                    <option value="hsinchu">新竹</option>
+                                    <option value="miaoli">苗栗</option>
+                                    <option value="taizhong">台中</option>
+                                    <option value="zhanghua">彰化</option>
+                                    <option value="yunlin">雲林</option>
+                                    <option value="jiayi">嘉義</option>
+                                    <option value="tainan">台南</option>
+                                    <option value="gaoxiong">高雄</option>
+                                    <option value="pingdong">屏東</option>
+                                    <option value="nantou">南投</option>
+                                    <option value="yilan">宜蘭</option>
+                                    <option value="hualian">花蓮</option>
+                                    <option value="taidong">台東</option>
+                                </select>
+                                <input type="text" name="address" size="40"><br>
+                                需專人簽收，勿填寫郵政信箱
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- btn -->
+        <div class="botton-btn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="shopping-cart.html"><input type="button" class="btn btn-secondary btn-lg btn-block" value="&#10094; 上一步"></a>
+                    </div>
+                    <div class="col-sm">
+                        <input type="submit" class="btn btn-primary btn-lg btn-block" value="下一步 &#10095;" onclick="check_email();">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    var isChange = false;
+    $(function() {
+
+        $("input,textarea,select").change(function() {
+            isChange = true;
+            $(this).addClass("editing");
+        });
+
+        $(window).bind('beforeunload', function(e) {
+            if (isChange || $(".editing").get().length > 0) {
+                return '購物資訊尚未填寫完畢，是否要離開?';
+            }
+        })
+    });
+    $("input:submit").click(function() {
+        $(window).unbind('beforeunload');
+    });
+    </script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function(event) {
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 100);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight) {
+            // Scroll Down
+            $('header').removeClass('header-down').addClass('header-up');
+        } else {
+            // Scroll Up
+            if (st + $(window).height() > $(document).height()) {
+                $('header').removeClass('header-up').addClass('header-down');
+            }
+        }
+
+        lastScrollTop = st;
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+body {
+    background-image: url(../img/login-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 微軟正黑體;
+
+}
+
+/*字體*/
+@font-face {
+    font-family: teko;
+    src: url(../font/teko-medium.otf);
+    font-family: Ocho_Siete;
+    src: url(../font/Ocho_Siete.ttf);
+}
+
+/*側邊scroll 消失*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.main-box {
+    margin-top: 8%;
+    margin-left: 30px;
+}
+
+.enter-box {
+    color: #D1D0D1;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.login-fb {
+    margin-top: 20px;
+}
+
+.fb-icon {
+    letter-spacing: 1px;
+    height: 30px;
+    width: 70%;
+    background-color: #0080ff;
+    padding-bottom: 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+}
+
+.fb-icon:hover {
+    letter-spacing: 1px;
+    height: 30px;
+    width: 92%;
+    padding-bottom: 25px;
+    background-color: #e3632d;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+}
+
+.m-top-bottom {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.mail-font {
+    font-weight: bold;
+}
+
+.input-style {
+    width: 90%;
+    height: 40px;
+}
+
+.sub-btn {
+    margin-left: 18px;
+    letter-spacing: 10px;
+    background-color: #0080ff;
+    border-color: #0080ff;
+    color: #FFFFF3;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.sub-btn:hover {
+    letter-spacing: 10px;
+    background-color: #fbd14b;
+    border-color: #fbd14b;
+    color: #566270;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+hr {
+    text-align: center;
+    line-height: 0px;
+}
+
+hr:after {
+    font-weight: bold;
+    font-size: 30px;
+    z-index: 2;
+}
+
+.btn-color {
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: #80d4f6;
+    border-color: #80d4f6;
+    transition: 0.3s;
+    color: #fff;
+    width: 85%;
+    border-radius: 8px;
+}
+
+.btn-color:hover {
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: #f9c00c;
+    border-color: #f9c00c;
+    transition: 0.3s;
+    color: #6f3826;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.m-padding {
+    padding-left: 30px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    letter-spacing: 2px;
+    transition: top 0.3s ease-in-out;
+}
+
+header.header-up {
+    top: -120px;
+}
+
+@font-face {
+    font-family: teko;
+    src: url(font/teko-medium.otf);
+    font-family: Ocho_Siete;
+    src: url(font/Ocho_Siete.ttf);
+}
+
+.nav-margin {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.btn img {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.s-btn {
+    width: 80%;
+    border-radius: 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.type {
+    background-color: #fff;
+    padding: 0;
+    width: 100%;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0;
+}
